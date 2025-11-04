@@ -43,11 +43,7 @@
             <h3><a href="https://www.amazon.com/ThinkPad-T14-Business-i7-1355U-Thunderbolt/dp/B0DB5KVMCS"
                    target="_blank">T14 Gen 5</a></h3>
             <p>
-                Forced to use this with Windows 10 + Group Policies @ work. Only thing that sucks about work rn.
-                Every day you can come to the office and check if something has been fucked with in your 'personal computer'.
-                TrendMicro is constantly wasting cycles in the background. Tiny screen. No dedicated graphics so a
-                4K monitor makes it HOWL. Blegh. Have to use WSL2 to get anything done at all. Have a Hyper-V
-                VM at the ready in case someone remotely deletes my Firefox plugins again.
+                Work laptop running Windows 10 with Group Policies. Use an <a href="https://www.amazon.com/IETS-Laptop-Cooling-Pad-GT600/dp/B0B8B7HDDX" target="_blank">IETS GT600</a> cooling pad to keep this German monster gaming laptop cool under load.
             </p>
         </section>
         <section>
@@ -59,12 +55,18 @@
             </p>
         </section>
         <section>
-            <h3><a href="https://www.amazon.com/Apple-iPhone-SE-64GB-Black/dp/B088NMH5KL" target="_blank">iPhone SE 2020</a></h3>
+            <h3><a href="https://www.nothing.tech/eu/en/products/phone-2" target="_blank">CMF Phone 2 Pro by Nothing</a></h3>
             <p>
-                My Pixel 4a (5G) served me 1630 days, costing EUR 0.30 per day, but I managed to drop it one too many times
-                and am on a loaner, currently. Waiting for the Pixel 10 release to see what's up. I rawdog my phones.
-                The way the Designer intended.
+                5G telefon, 128/8 GB, oranž. Bought for EUR 259 on 2025-08-21.
+                Currently costs EUR <span id="cost">-</span> per day. I rawdog my phones. The way the Designer intended.
             </p>
+            <script>
+                const purchaseDate = new Date('2025-08-21');
+                const today = new Date();
+                const daysSincePurchase = Math.floor((today - purchaseDate) / (1000 * 60 * 60 * 24));
+                const costPerDay = daysSincePurchase > 0 ? (259 / daysSincePurchase).toFixed(2) : '259.00';
+                document.getElementById('cost').textContent = costPerDay;
+            </script>
         </section>
         <section>
             <h3><a href="https://www.amazon.com/Logitech-M330-Silent-Wireless-Mouse/dp/B01JPOLKDW" target="_blank">Logitech M330</a></h3>
@@ -107,9 +109,7 @@
         <section>
             <h3><a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm</a></h3>
             <p>
-                The perfect IDE for me. The <a href="https://plugins.jetbrains.com/plugin/21056-proxyai"
-                                               target="_blank">ProxyAI</a>
-                plugin allows me to always go with the latest & greatest LLM. Currently prefer Claude 4 thinking.
+                The perfect IDE for me. I use <a href="https://docs.claude.com/docs/claude-code" target="_blank">Claude Code</a> for AI-assisted development.
             </p>
         </section>
         <section>
